@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        section {
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #333;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>قسم المأكولات</h1>
+
+    <section>
+        <h2 onclick="toggleContent('grill')">المشاوي</h2>
+        <ul id="grill">
+            <li>كباب حلبي</li>
+            <li>كباب اسطنبولي</li>
+            <li>كباب اضنا</li>
+            <li>كباب عنتبلي</li>
+            <li>كباب ازمرلي</li>
+            <li>كباب سجق</li>
+            <li>كباب دجاج</li>
+            <li>كباب خشخاش</li>
+            <li>كباب كبابجي</li>
+            <li>كباب عراقي</li>
+            <li>كباب اورفلي</li>
+            <li>كباب باذنجان</li>
+            <li>كباب فرنغلي</li>
+            <li>كباب فستق</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('coldAppetizers')">المقبلات الباردة</h2>
+        <ul id="coldAppetizers">
+            <li>حمص</li>
+            <li>متبل</li>
+            <li>محمرة</li>
+            <li>شنكليش</li>
+            <li>ورق عنب</li>
+            <li>لبنة</li>
+            <li>لبن رايب</li>
+            <li>مسقعة</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('hotAppetizers')">المقبلات الساخنة</h2>
+        <ul id="hotAppetizers">
+            <li>فتة باذنجان</li>
+            <li>فتة حمص</li>
+            <li>قلاية بندورة</li>
+            <li>بطاطا</li>
+            <li>بطاطا ويدجز</li>
+            <li>بطاطا حارة</li>
+            <li>عرايس</li>
+            <li>لحم بعجين</li>
+            <li>بوراك</li>
+            <li>كبة مقلية</li>
+            <li>حلوم</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('salads')">السلطات</h2>
+        <ul id="salads">
+            <li>فتووش</li>
+            <li>فتوش باذنجان</li>
+            <li>تبولة</li>
+            <li>تبولة سبانخ</li>
+            <li>تبولة رمان</li>
+            <li>شرقية</li>
+            <li>شرقية بالطحينية</li>
+            <li>فلاحية</li>
+            <li>جرجير</li>
+            <li>جرجير باللبن</li>
+            <li>سلطة الراهب</li>
+            <li>سجق</li>
+            <li>نقانق</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('pastries')">المعجنات</h2>
+        <ul id="pastries">
+            <li>لحم بعجين حلبي</li>
+            <li>لحم بعجين كبابجي</li>
+            <li>لحم بعجين لبناني</li>
+            <li>فطاير جبنة</li>
+            <li>فطاير سبانخ</li>
+            <li>فطاير بيتزا</li>
+            <li>فطاير محمرة</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('sandwiches')">الساندويش</h2>
+        <ul id="sandwiches">
+            <li>شيش</li>
+            <li>شقف</li>
+            <li>كباب</li>
+            <li>حلوم</li>
+            <li>بطاطا</li>
+            <li>سجق</li>
+            <li>نقانق</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 onclick="toggleContent('shawarma')">الشاورما</h2>
+        <ul id="shawarma">
+            <li>لحمة</li>
+            <li>دجاج</li>
+            <li>ساندويش دجاج</li>
+            <li>ساندويش لحمة</li>
+        </ul>
+    </section>
+
+    <script>
+        function toggleContent(sectionId) {
+            var content = document.getElementById(sectionId);
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
+s
